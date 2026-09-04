@@ -1,0 +1,13 @@
+node_modules
+.next
+out
+*.tsbuildinfo
+
+# local tooling and OS noise
+.DS_Store
+*.local
+.env*
+!.env.example
+
+# original brand assets — optimised copies ship in app/ and public/brand
+brand-source
