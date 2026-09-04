@@ -164,9 +164,3 @@ public/fonts/       self-hosted woff2, inlined into exports
   reports far above the refresh rate, and every report re-renders the plate.
 - Idle sits at 60fps on all eight materials, including while the sheet is
   reacting to the cursor.
-
-## Deploying
-
-Set `NEXT_PUBLIC_SITE_URL` to the public origin. Without it the social card
-metadata resolves against localhost and the preview image will not load. Vercel
-is handled automatically through `VERCEL_URL`.
