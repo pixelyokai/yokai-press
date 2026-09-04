@@ -51,7 +51,7 @@ export default function RootLayout({
         <script
           dangerouslySetInnerHTML={{
             __html:
-              "(function(){try{var t=localStorage.getItem('stampy-theme');" +
+              "(function(){try{var t=localStorage.getItem('yokai-theme');" +
               "if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';" +
               "document.documentElement.dataset.theme=t;}catch(e){document.documentElement.dataset.theme='light';}})()",
           }}

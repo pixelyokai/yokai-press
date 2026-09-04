@@ -57,7 +57,7 @@ export default function Page() {
       const next: Theme = t === "dark" ? "light" : "dark";
       document.documentElement.dataset.theme = next;
       try {
-        localStorage.setItem("stampy-theme", next);
+        localStorage.setItem("yokai-theme", next);
       } catch {
         /* private mode — the theme just will not persist */
       }

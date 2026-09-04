@@ -106,7 +106,7 @@ function filename(cfg: StampConfig) {
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-|-$/g, "") || "stamp";
-  return `stampy-${slug}.png`;
+  return `yokai-press-${slug}.png`;
 }
 
 function download(blob: Blob, name: string) {

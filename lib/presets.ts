@@ -173,11 +173,11 @@ export const DEFAULT_CONFIG: StampConfig = {
   denomValue: "",
   denomSymbol: "¢",
   denomCorner: "tr",
-  country: "Republic of Stampy",
+  country: "Republic of Yokai",
   countryAlt: "",
   year: "",
   postmark: false,
-  postmarkText: "STAMPY G.P.O.",
+  postmarkText: "YOKAI PRESS G.P.O.",
   postmarkOpacity: 0.72,
   postmarkRotation: -14,
 
