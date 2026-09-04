@@ -210,7 +210,7 @@ export function Toolbar({
               <div className="icon-group">
                 <a
                   className="icon-btn"
-                  href="https://x.com"
+                  href="https://x.com/pixelyokai"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="X"
@@ -219,7 +219,7 @@ export function Toolbar({
                 </a>
                 <a
                   className="icon-btn"
-                  href="https://github.com"
+                  href="https://github.com/pixelyokai/yokai-press"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub"
