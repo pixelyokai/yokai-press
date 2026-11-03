@@ -1114,15 +1114,20 @@ button { cursor: pointer; background: none; border: 0; padding: 0; }
   .frame { flex-direction: column; justify-content: flex-start; }
 
   .canvas { flex: 1; min-height: 0; align-self: auto; width: 100%; }
-  .orb { padding: 12px; }
+  /* A size container, so the plate can be capped by the room the orb actually
+     has rather than by a guess at it from the viewport. */
+  .orb { padding: 20px 16px; container-type: size; }
 
   /* These caps size the layout box, but .stamp-tilt then scales it visually —
      1.4x at the default 100%. On the desktop canvas the slack absorbs that; in
-     a ~308px tall orb it does not, so the ceiling has to be the post-zoom size
-     divided back out, or the plate overruns the header and the panel. */
+     a short orb it does not, so the ceiling is the orb's content box divided
+     back out by the default zoom, or the plate overruns the header and the
+     panel. The viewport caps stay first as the fallback. */
   .stamp-holder > svg:not(.stamp-shadow) {
     max-width: min(48vw, 190px);
     max-height: min(24dvh, 214px);
+    max-width: min(190px, 100cqw / 1.4);
+    max-height: min(214px, 100cqh / 1.4);
   }
 
   .panel-slot {
